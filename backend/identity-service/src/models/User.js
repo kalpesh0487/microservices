@@ -30,26 +30,26 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-userSchema.pre('save', async function (next) {
-    if(this.isModified('password')) {
-        try {
-            this.password = await argon2.hash(this.password);
-        } catch (error) {
-            return next(error)
-        }
-    }
-})
-
-userSchema.methods.comparePassword = async function(candidatePassword) {
+userSchema.pre("save", async function (next) {
+  if (this.isModified("password")) {
     try {
-        return await argon2.verify(this.password, candidatePassword);
+      this.password = await argon2.hash(this.password);
     } catch (error) {
-        throw error;
+      return next(error);
     }
-}
+  }
+});
 
-userSchema.index({ username: 'text' });
+userSchema.methods.comparePassword = async function (candidatePassword) {
+  try {
+    return await argon2.verify(this.password, candidatePassword);
+  } catch (error) {
+    throw error;
+  }
+};
 
-const User = mongoose.model('User', userSchema)
+userSchema.index({ username: "text" });
+
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;
