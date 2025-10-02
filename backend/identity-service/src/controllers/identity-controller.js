@@ -52,4 +52,4 @@ const registerUser = async (req, res) => {
 
 // logout
 
-module.export = {registerUser};
+module.exports = {registerUser};
