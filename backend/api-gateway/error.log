@@ -1,0 +1,8 @@
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-04T19:20:39.659Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-04T19:23:33.598Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-04T19:23:57.288Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-04T19:25:01.421Z"}
+{"level":"error","message":"Proxy error: AggregateError","service":"api-gateway","timestamp":"2025-10-04T19:26:27.726Z"}
+{"level":"error","message":"Proxy error: TypeError: Cannot set properties of undefined (setting 'content-type')","service":"api-gateway","timestamp":"2025-10-04T19:27:55.354Z"}
+{"level":"error","message":"Proxy error: AggregateError","service":"api-gateway","timestamp":"2025-10-04T19:28:48.085Z"}
+{"level":"error","message":"Proxy error: AggregateError","service":"api-gateway","timestamp":"2025-10-04T19:29:07.148Z"}
