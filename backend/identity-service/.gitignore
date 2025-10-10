@@ -2,3 +2,5 @@
 env
 node_modules
 creds.txt
+combined.log
+error.log

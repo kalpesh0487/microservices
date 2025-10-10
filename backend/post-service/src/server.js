@@ -41,8 +41,8 @@ app.use(errorHandler);
 
 app.listen(PORT, () => {
     logger.info(`Post service running on port ${PORT}`)
-})
+});
 
 process.on('unhandledRejection', (reason, promise) => {
     logger.error('Unhandled Rejection at ', promise, "reason", reason)
-})
+});
