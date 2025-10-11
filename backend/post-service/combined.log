@@ -254,3 +254,7 @@
 {"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-10-10T02:05:09.027Z"}
 {"level":"info","message":"Received DELETE request to /api/posts/68e860ef248d6d39af1b22dc","service":"post-service","timestamp":"2025-10-10T02:05:19.232Z"}
 {"level":"info","message":"Received body [object Object]","service":"post-service","timestamp":"2025-10-10T02:05:19.232Z"}
+{"level":"info","message":"Post service running on port 3002","service":"post-service","timestamp":"2025-10-11T09:02:11.508Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-10-11T09:02:16.103Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-10-11T09:13:57.526Z"}
+{"level":"info","message":"Received body [object Object]","service":"post-service","timestamp":"2025-10-11T09:13:57.527Z"}

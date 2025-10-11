@@ -9,3 +9,9 @@
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-08T19:34:49.066Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-08T19:36:22.920Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-10T02:05:00.406Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:08:19.393Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:34:21.704Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:35:22.517Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:35:44.667Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:36:37.786Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:36:58.098Z"}
