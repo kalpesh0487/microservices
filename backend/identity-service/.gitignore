@@ -4,3 +4,5 @@ node_modules
 creds.txt
 combined.log
 error.log
+./combined.log
+./error.log
