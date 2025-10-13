@@ -6,6 +6,8 @@ const helmet = require("helmet");
 const mediaRoutes = require('./routes/media-routes');
 const errorHandler = require('./middlewares/errorHandler');
 const logger = require('./utils/logger');
+const { connectRabbitMQ, consumeEvent } = require('./utils/rabbbitmq');
+const { handlePostDeleted } = require('./eventHandlers/media-event-handlers');
 
 const app = express();
 const PORT = process.env.PORT || 3003;
@@ -32,9 +34,23 @@ app.use('/api/media', mediaRoutes);
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-    logger.info(`Media service running on port ${PORT}`)
-});
+async function startSerever() {
+  try {
+    await connectRabbitMQ();
+    
+    // consume all events
+    await consumeEvent('post.deleted', handlePostDeleted);
+
+    app.listen(PORT, () => {
+      logger.info(`Media service running on port ${PORT}`);
+    });
+  } catch (error) {
+    logger.error('Failed to connect to server: ', error);
+    process.exit(1);
+  }
+}
+
+startSerever(); 
 
 // unhandle promise rejection
 process.on('unhandledRejection', (reason, promise) => {
