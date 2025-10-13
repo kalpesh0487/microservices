@@ -16,3 +16,4 @@
 {"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:36:37.786Z"}
 {"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-10-11T09:36:58.098Z"}
 {"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-10-13T18:12:30.323Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-10-13T19:18:48.947Z"}

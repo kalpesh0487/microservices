@@ -316,3 +316,18 @@
 {"level":"info","message":"Connected to rabbitMq","service":"media-service","timestamp":"2025-10-13T19:11:09.929Z"}
 {"level":"info","message":"Subscribed to event : post.deleted","service":"media-service","timestamp":"2025-10-13T19:11:09.940Z"}
 {"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-10-13T19:11:09.943Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"media-service","timestamp":"2025-10-13T19:18:58.245Z"}
+{"level":"info","message":"Subscribed to event : post.deleted","service":"media-service","timestamp":"2025-10-13T19:18:58.255Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-10-13T19:18:58.258Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-13T19:19:02.798Z"}
+{"level":"info","message":"Received body undefined","service":"media-service","timestamp":"2025-10-13T19:19:02.799Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-10-13T19:19:02.813Z"}
+{"level":"info","message":"File details: name=Ellipse 1.png, type=image/png","service":"media-service","timestamp":"2025-10-13T19:19:02.814Z"}
+{"level":"info","message":"Uploading to cloudinary starting...","service":"media-service","timestamp":"2025-10-13T19:19:02.816Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-10-13T19:19:03.525Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - tkftdahace4kfjj3ldsf","service":"media-service","timestamp":"2025-10-13T19:19:04.431Z"}
+{"0":"t","1":"k","10":"4","11":"k","12":"f","13":"j","14":"j","15":"3","16":"l","17":"d","18":"s","19":"f","2":"f","3":"t","4":"d","5":"a","6":"h","7":"a","8":"c","9":"e","level":"info","message":"Media deleted successfully from cloud storage","service":"media-service","timestamp":"2025-10-13T19:20:11.466Z"}
+{"level":"info","message":"Deleted media 68ed50a8d4678118a48b06ec associated with this deletd post 68ed50c50a570db25eb9f00b","service":"media-service","timestamp":"2025-10-13T19:20:11.489Z"}
+{"level":"info","message":"Processed deletion of media for post id 68ed50c50a570db25eb9f00b","service":"media-service","timestamp":"2025-10-13T19:20:11.491Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-13T19:20:53.465Z"}
+{"level":"info","message":"Received body undefined","service":"media-service","timestamp":"2025-10-13T19:20:53.465Z"}
