@@ -10,7 +10,7 @@ const errorHandler = require("./middlewares/errorHandler");
 const logger = require("./utils/logger");
 const { connectRabbitMQ, consumeEvent } = require('./utils/rabbbitmq');
 const searchRoutes = require('./routes/search-route');
-const { handlePostCreated } = require('./eventHandler/search-event-handler');
+const { handlePostCreated, handlePostDeleted } = require('./eventHandler/search-event-handler');
 
 const app = express();
 const PORT = process.env.PORT || 3004;
@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 //TODO: here also same homework
-
+// TODO: redis caching implement for search as well na 
 app.use('/api/search', searchRoutes);
 
 app.use(errorHandler);
@@ -41,8 +41,11 @@ async function startServer() {
 
     // consume event / subscribe to events
     await consumeEvent('post.created', handlePostCreated);
+    await consumeEvent('post.deleted', handlePostDeleted);
 
-    
+    app.listen(PORT, () => {
+      logger.info(`Search service is running on port: ${PORT}`)
+    })
   } catch (error) {
     logger.error(error, 'Failed to start search service.');
     process.exit(1);
