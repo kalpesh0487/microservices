@@ -331,3 +331,18 @@
 {"level":"info","message":"Processed deletion of media for post id 68ed50c50a570db25eb9f00b","service":"media-service","timestamp":"2025-10-13T19:20:11.491Z"}
 {"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-13T19:20:53.465Z"}
 {"level":"info","message":"Received body undefined","service":"media-service","timestamp":"2025-10-13T19:20:53.465Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"media-service","timestamp":"2025-10-13T20:03:03.788Z"}
+{"level":"info","message":"Subscribed to event : post.deleted","service":"media-service","timestamp":"2025-10-13T20:03:03.797Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-10-13T20:03:03.801Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-10-13T20:03:09.450Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"media-service","timestamp":"2025-10-13T20:03:21.704Z"}
+{"level":"info","message":"Subscribed to event : post.deleted","service":"media-service","timestamp":"2025-10-13T20:03:21.713Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-10-13T20:03:21.717Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-10-13T20:03:26.970Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"media-service","timestamp":"2025-10-13T20:12:20.656Z"}
+{"level":"info","message":"Subscribed to event : post.deleted","service":"media-service","timestamp":"2025-10-13T20:12:20.665Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-10-13T20:12:20.667Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"media-service","timestamp":"2025-10-14T13:23:55.186Z"}
+{"level":"info","message":"Subscribed to event : post.deleted","service":"media-service","timestamp":"2025-10-14T13:23:55.202Z"}
+{"level":"info","message":"Media service running on port 3003","service":"media-service","timestamp":"2025-10-14T13:23:55.207Z"}
+{"level":"info","message":"Connected to mongodb","service":"media-service","timestamp":"2025-10-14T13:24:00.560Z"}

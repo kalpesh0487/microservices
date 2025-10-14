@@ -432,3 +432,15 @@
 {"level":"info","message":"Received GET request to /v1/media/get","service":"api-gateway","timestamp":"2025-10-13T19:20:53.461Z"}
 {"level":"info","message":"Received body undefined","service":"api-gateway","timestamp":"2025-10-13T19:20:53.461Z"}
 {"level":"info","message":"Response received from Media service: 200","service":"api-gateway","timestamp":"2025-10-13T19:20:53.486Z"}
+{"level":"info","message":"API Gateway is running on port : 3000","service":"api-gateway","timestamp":"2025-10-14T13:23:42.695Z"}
+{"level":"info","message":"Identity service is running on port : http://localhost:3001","service":"api-gateway","timestamp":"2025-10-14T13:23:42.699Z"}
+{"level":"info","message":"Post service is running on port : http://localhost:3002","service":"api-gateway","timestamp":"2025-10-14T13:23:42.699Z"}
+{"level":"info","message":"Media service is running on port : http://localhost:3003","service":"api-gateway","timestamp":"2025-10-14T13:23:42.700Z"}
+{"level":"info","message":"Search service is running on port : http://localhost:3004","service":"api-gateway","timestamp":"2025-10-14T13:23:42.700Z"}
+{"level":"info","message":"Redis Url redis://localhost:6379","service":"api-gateway","timestamp":"2025-10-14T13:23:42.700Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-10-14T13:24:42.939Z"}
+{"level":"info","message":"Received body [object Object]","service":"api-gateway","timestamp":"2025-10-14T13:24:42.939Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"api-gateway","timestamp":"2025-10-14T13:24:43.251Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2025-10-14T13:25:32.081Z"}
+{"level":"info","message":"Received body [object Object]","service":"api-gateway","timestamp":"2025-10-14T13:25:32.082Z"}
+{"level":"info","message":"Response received from Post service: 201","service":"api-gateway","timestamp":"2025-10-14T13:25:32.288Z"}

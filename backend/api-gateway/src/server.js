@@ -90,7 +90,7 @@ app.use(
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from Identity service: ${proxyRes.statusCode}`
+        `Response received from Post service: ${proxyRes.statusCode}`
       );
       return proxyResData;
     },
@@ -120,6 +120,48 @@ app.use(
   })
 );
 
+// setting up proxy for search service
+app.use(
+  "/v1/search",
+  validateToken,
+  proxy(process.env.SEARCH_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["content-type"] = "application/json";
+      proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
+
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Search service: ${proxyRes.statusCode}`
+      );
+      return proxyResData;
+    },
+  })
+);
+
+app.use(
+  "/v1/posts",
+  validateToken,
+  proxy(process.env.POST_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["content-type"] = "application/json";
+      proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
+
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Identity service: ${proxyRes.statusCode}`
+      );
+      return proxyResData;
+    },
+  })
+);
+
+
 app.listen(PORT, () => {
   logger.info(`API Gateway is running on port : ${PORT}`);
   logger.info(
@@ -131,7 +173,8 @@ app.listen(PORT, () => {
   logger.info(
     `Media service is running on port : ${process.env.MEDIA_SERVICE_URL}`
   );
+  logger.info(
+    `Search service is running on port : ${process.env.SEARCH_SERVICE_URL}`
+  );
   logger.info(`Redis Url ${process.env.REDIS_URL}`);
 });
-
-// 5:47:31

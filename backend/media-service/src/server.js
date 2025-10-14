@@ -16,11 +16,9 @@ mongoose
   .connect(process.env.MONGO_URL)
   .then(() => logger.info("Connected to mongodb"))
   .catch((e) => logger.error("Mongo connection error, ", e));
-console.log('Reached til connection in media service')
 app.use(cors());
 app.use(helmet());
 app.use(express.json());
-console.log('Reached til aftr cors and express')
 
 app.use((req, res, next) => {
   logger.info(`Received ${req.method} request to ${req.url}`);
